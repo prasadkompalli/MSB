@@ -1,0 +1,72 @@
+{
+  "variables": {
+    "ssh_name": "packer",
+    "ssh_pass": "packer",
+	"username" : "root",
+	"password" : "vagrant",
+	"autologin" : "true"
+	
+	       },
+  "builders": [
+  
+      {
+      "type": "vmware-iso",
+      "boot_command": [
+        "<tab> text ks=http://{{ .HTTPIP }}:{{ .HTTPPort }}/kickstart.cfg<enter><wait>"
+      ],
+      "boot_wait": "20s",
+      "disk_size": 40520,
+      "guest_os_type": "centos-64",
+      "http_directory": "http",
+	"iso_url": "http://mirrors.liquidweb.com/CentOS/7/isos/x86_64/CentOS-7-x86_64-Minimal-1511.iso",
+    "iso_checksum_type": "sha256",
+    "iso_checksum" : "f90e4d28fa377669b2db16cbcb451fcb9a89d2460e3645993e30e137ac37d284",
+	"output_directory" : "C:/Users/miracle/Desktop/CompleteMSBImage2",
+	"communicator" : "ssh",
+	"ssh_username": "root",
+     "ssh_private_key_file": "vagrant_rsa",
+     "ssh_password" : "vagrant",
+      "ssh_port": 22,
+      "ssh_wait_timeout": "10000s",
+		"ssh_pty" : "true",
+		 "shutdown_command": "echo 'shutdown -P now' > shutdown.sh; echo 'vagrant' | sudo -S sh 'shutdown.sh'",
+		"tools_upload_flavor": "linux",
+	 
+	"vmx_data": {
+        "memsize": "512",
+        "numvcpus": "1",
+        "cpuid.coresPerSocket": "1"
+      }
+    }
+  ],
+   "provisioners": [
+  {
+	"type": "shell",
+	
+      "override": {
+		"vmware-iso": 
+		{
+					"execute_command" : "echo 'vagrant' | {{ .Vars }} sudo -E -S sh '{{ .Path }}'",
+					"scripts": [
+								"./script/softwares.sh",
+								"./script/Xampp.sh"		
+								]
+					
+		}
+	 }
+	}
+],
+ "post-processors": [
+    {
+      "type": "vagrant",
+	"keep_input_artifact": true,
+	  "override": 
+	  {
+             "vmware":
+		 {
+          "output": "centos-7-1-x64-vmware.box"
+         }
+      }
+    }
+  ]  
+}
