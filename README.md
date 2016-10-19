@@ -1,32 +1,75 @@
 ## Synopsis
 
-At the top of the file there should be a short introduction and/ or overview that explains **what** the project is. This description should match descriptions added for package managers (Gemspec, package.json, etc.)
+This prject build an automated environment set up with Centos7 Packer Image and Vagrant Box in our machine on the top of VMWare station.   
 
-## Code Example
+## Introduction
+	
+In this project We are able to provide one packer image to the developers of services bay with a identical packer image and provide portable work enviroment using vagrant box.		
 
-Show what the library does as concisely as possible, developers should be able to figure out **how** your project solves their problem by looking at the code example. Make sure the API you are showing off is obvious, and that your code is short and concise.
+	## Packer :
 
-## Motivation
+	Packer is an open source tool for creating identical machine images for multiple platforms from a single source configuration. Packer does not replace configuration management like Chef or Puppet. In fact, when building images, Packer is able to use tools like Chef or Puppet to install software onto the image.  
+	
+	## Vagrant :
+	
+	Vagrant provides easy to configure, reproducible, and portable work environments built on top of industry-standard technology and controlled by a single consistent workflow to help maximize the productivity and flexibility of you and your team.
+		
+	
+## Pre-requisites 
 
-A short description of the motivation behind the creation and maintenance of the project. This should explain **why** the project exists.
-
+	Packer
+	Vagrant
+	GitBash
+	VMWare WorkStation
+	
 ## Installation
+	
+	
+	The following are the required softwares that are necessary installed to work on this project.
+	
+ ## Packer
+		
+Install the packer by using the below link. 
+				
+			https://www.packer.io/downloads.html
 
-Provide code examples and explanations of how to get the project.
+At our project time, We are using Packer (0.10.1). Please download the proper package for your operating system and architecture. We are downloaded the packer in Windows8.1 machine. After downloaded put the path setting to the packer into the environment variables.
+    
 
-## API Reference
 
-Depending on the size of the project, if it is small and simple enough the reference docs can be added to the README. For medium size to larger projects it is important to at least provide a link to where the API reference docs live.
+ ## Vagrant
 
-## Tests
+ Install the vagrant by using the below link.
+ 
+	https://www.vagrantup.com/downloads.html
 
-Describe and show how to run the tests with code examples.
+At our project time, We are using vagrant (1.8.5). Please download the proper package for your operating system and architecture. We are downloaded the vagrant in Windows8.1 machine. After downloaded put the path setting to the vagrant into the environment variables.
+	
+	
+VMWare Workstation
+
+ ## GitBash
+ 
+Install the Git bash.
+
+
+## Run 
+
+Clone the above code from our git repository.
+
+git clone https://github.com/prasadkompalli/MSB.git
+
+After clone the repo run the below command from the git commandline to automate the environment set up by using packer. It Creates one packer image and vagrant box. 
+
+packer build Centos7Template.json
+
 
 ## Contributors
 
-Let people know how they can dive into the project, include important links to things like issue trackers, irc, twitter accounts if applicable.
+
+
 
 ## License
 
-A short snippet describing the license (MIT, Apache, etc.)
-
+Miracle Software Systems.Inc
+MIL Labs 
