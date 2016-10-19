@@ -1,6 +1,6 @@
 ## Synopsis
 
-This prject build an automated environment set up with Centos7 Packer Image and Vagrant Box in our machine on the top of VMWare station.   
+This prject build an automated environment set up with Centos7 Packer Image and Vagrant Box in our machine along with installed Java, Apache Tomcat and Xampp Server on the top of VMWare station.   
 
 ## Introduction
 	
