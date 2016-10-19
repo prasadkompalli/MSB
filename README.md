@@ -27,7 +27,7 @@ In this project We are able to provide one packer image to the developers of ser
 	
 	The following are the required softwares that are necessary installed to work on this project.
 	
-  #Packer
+  * Packer
 		
 Install the packer by using the below link. 
 				
@@ -37,7 +37,7 @@ At our project time, We are using Packer (0.10.1). Please download the proper pa
     
 
 
- #Vagrant
+ * Vagrant
 
  Install the vagrant by using the below link.
  
@@ -46,9 +46,9 @@ https://www.vagrantup.com/downloads.html
 At our project time, We are using vagrant (1.8.5). Please download the proper package for your operating system and architecture. We are downloaded the vagrant in Windows8.1 machine. After downloaded put the path setting to the vagrant into the environment variables.
 	
 	
- #VMWare Workstation
+ * VMWare Workstation
 
- #GitBash
+ * GitBash
  
 Install the Git bash.
 
