@@ -31,7 +31,7 @@ In this project We are able to provide one packer image to the developers of ser
 		
 Install the packer by using the below link. 
 				
-https://www.packer.io/downloads.html
+`https://www.packer.io/downloads.html                                                                    `
 
 At our project time, We are using Packer (0.10.1). Please download the proper package for your operating system and architecture. We are downloaded the packer in Windows8.1 machine. After downloaded put the path setting to the packer into the environment variables.
     
@@ -41,7 +41,7 @@ At our project time, We are using Packer (0.10.1). Please download the proper pa
 
  Install the vagrant by using the below link.
  
-	https://www.vagrantup.com/downloads.html
+`	https://www.vagrantup.com/downloads.html                                                               `   
 
 At our project time, We are using vagrant (1.8.5). Please download the proper package for your operating system and architecture. We are downloaded the vagrant in Windows8.1 machine. After downloaded put the path setting to the vagrant into the environment variables.
 	
@@ -57,11 +57,11 @@ Install the Git bash.
 
 Clone the above code from our git repository.
 
-`git clone https://github.com/prasadkompalli/MSB.git`
+`git clone https://github.com/prasadkompalli/MSB.git                                                      `
 
 After clone the repo run the below command from the git commandline to automate the environment set up by using packer. It Creates one packer image and vagrant box. 
 
-`packer build Centos7Template.json`
+`packer build Centos7Template.json                                                                         `   
 
 
 ## Contributors
@@ -71,6 +71,6 @@ After clone the repo run the below command from the git commandline to automate 
 
 ## License
 <dl>
-<dt><i>`Miracle Software Systems.Inc`</i></dt>
-<dt><i>`MIL Labs` </i></dt>
+<dt><i>Miracle Software Systems.Inc</i></dt>
+<dt><i>MIL Labs</i></dt>
 </dl>
