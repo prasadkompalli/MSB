@@ -17,10 +17,10 @@ In this project We are able to provide one packer image to the developers of ser
 	
 ## Pre-requisites 
 
-	..* Packer
-	..* Vagrant
-	..* GitBash
-	..* VMWare WorkStation
+	* Packer
+	* Vagrant
+	* GitBash
+	* VMWare WorkStation
 	
 ## Installation
 	
@@ -31,7 +31,7 @@ In this project We are able to provide one packer image to the developers of ser
 		
 Install the packer by using the below link. 
 				
-			https://www.packer.io/downloads.html
+	https://www.packer.io/downloads.html
 
 At our project time, We are using Packer (0.10.1). Please download the proper package for your operating system and architecture. We are downloaded the packer in Windows8.1 machine. After downloaded put the path setting to the packer into the environment variables.
     
@@ -71,6 +71,6 @@ After clone the repo run the below command from the git commandline to automate 
 
 ## License
 <dl>
-<dt>Miracle Software Systems.Inc</dt>
-<dt>MIL Labs </dt>
+<dt><i>Miracle Software Systems.Inc</i></dt>
+<dt><i>MIL Labs </i></dt>
 </dl>
