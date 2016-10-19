@@ -27,7 +27,7 @@ In this project We are able to provide one packer image to the developers of ser
 	
 	The following are the required softwares that are necessary installed to work on this project.
 	
-  H2* H2Packer
+  H2* Packer
 		
 Install the packer by using the below link. 
 				
@@ -37,7 +37,7 @@ At our project time, We are using Packer (0.10.1). Please download the proper pa
     
 
 
- H2* H2Vagrant
+ H2* Vagrant
 
  Install the vagrant by using the below link.
  
