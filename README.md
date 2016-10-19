@@ -17,6 +17,8 @@ In this project We are able to provide one packer image to the developers of ser
 	
 ## Pre-requisites 
 
+	These are the required pre-requisites uses to develop this project.
+
 	* Packer
 	* Vagrant
 	* GitBash
