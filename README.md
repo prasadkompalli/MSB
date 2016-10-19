@@ -31,7 +31,7 @@ In this project We are able to provide one packer image to the developers of ser
 		
 Install the packer by using the below link. 
 				
-underscores https://www.packer.io/downloads.html
+https://www.packer.io/downloads.html
 
 At our project time, We are using Packer (0.10.1). Please download the proper package for your operating system and architecture. We are downloaded the packer in Windows8.1 machine. After downloaded put the path setting to the packer into the environment variables.
     
