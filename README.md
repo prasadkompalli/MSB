@@ -6,11 +6,11 @@ This prject build an automated environment set up with Centos7 Packer Image and 
 	
 In this project We are able to provide one packer image to the developers of services bay with a identical packer image and provide portable work enviroment using vagrant box.		
 
-	H2* Packer :
+	* Packer :
 
 	Packer is an open source tool for creating identical machine images for multiple platforms from a single source configuration. Packer does not replace configuration management like Chef or Puppet. In fact, when building images, Packer is able to use tools like Chef or Puppet to install software onto the image.  
 	
-	H2* Vagrant :
+	* Vagrant :
 	
 	Vagrant provides easy to configure, reproducible, and portable work environments built on top of industry-standard technology and controlled by a single consistent workflow to help maximize the productivity and flexibility of you and your team.
 		
@@ -27,7 +27,7 @@ In this project We are able to provide one packer image to the developers of ser
 	
 	The following are the required softwares that are necessary installed to work on this project.
 	
-  H2* Packer
+  * Packer
 		
 Install the packer by using the below link. 
 				
@@ -37,7 +37,7 @@ At our project time, We are using Packer (0.10.1). Please download the proper pa
     
 
 
- H2* Vagrant
+ * Vagrant
 
  Install the vagrant by using the below link.
  
